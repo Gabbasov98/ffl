@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=9133eb49-3a97-4b2d-90be-6b80a97a5036"></script>
+    <title>Главная</title>
+</head>
+
+
+<body class="m-page">
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="header__inner">
+                    <a href="" class="header__logo">
+                        <img src="img/logo.svg" alt="">
+                    </a>
+
+                    <div class="header__desc">
+                        Первая профессиональная
+                        футбольная лига для молодежи
+                    </div>
+
+                    <div class="socials">
+                        <a href="" class="socials__item">
+                            <span class="socials__icon">
+                    <img src="img/whatsapp.svg" alt="">
+                </span>
+                            <span class="socials__title">Вотсап</span>
+                        </a>
+                        <a href="" class="socials__item socials__item--tg">
+                            <span class="socials__icon">
+                    <img src="img/tg.svg" alt="">
+                </span>
+                            <span class="socials__title">Телеграм</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </header>
+        <main class="content">
+
+            <div class="main">
+                <div class="container">
+                    <div class="main__inner">
+                        <div class="main__content">
+                            <h1 class="main__title">
+                                Кубок ФФЛ
+                            </h1>
+                            <div class="main__props">
+                                <div class="main-prop">
+                                    <div class="main-prop__title">Дата</div>
+                                    <div class="main-prop__desc">23 мая ‘24</div>
+                                </div>
+                                <div class="main-prop">
+                                    <div class="main-prop__title">Время</div>
+                                    <div class="main-prop__desc">16:00</div>
+                                </div>
+                                <div class="main-prop main-prop--full">
+                                    <div class="main-prop__title">Место проведения</div>
+                                    <div class="main-prop__desc2">
+                                        Манеж «Арена Альфа спорт»,
+                                        Москва, Шипиловский проезд, 63к2
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="main__nav">
+                                <a href="#req" class="main__btn m-btn m-btn-primary">
+                                    <span>Записаться</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="main__img">
+                            <img src="img/boys.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="req" class="req">
+                <div class="container">
+                    <div class="m-card">
+                        <div class="info-block text-center">
+                            <div class="h2">
+                                Заявка на участие
+                            </div>
+                            <div class="text24 text18-tablet">
+                                Открыта регистрация для ваших команд на предстоящий турнир, который состоится. Количество мест ограничено! 
+                            </div>
+                        </div>
+                        <form action="https://echo.htmlacademy.ru" class="req-form">
+                            <div class="req-form__fields">
+                                <div class="fg _full">
+                                    <input name="companyName" required type="text" placeholder="Название команды">
+                                </div>
+                                <div class="fg _full">
+                                    <input name="name" required type="text" placeholder="Фамилия, имя и отчество">
+                                </div>
+                                <div class="fg">
+                                    <input name="phone" required type="tel" placeholder="Телефон">
+                                    <div class="fg__error-text">
+                                        Телефон введён неправильно
+                                    </div>
+                                </div>
+                                <div class="fg">
+                                    <input name="email" required type="email" placeholder="Почта">
+                                </div>
+                            </div>
+                            <div class="req-form__nav">
+                                <button class="m-btn m-btn-primary">
+                                    <span>Записаться</span>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="place">
+                <div class="container">
+                    <div class="m-card">
+                        <div class="info-block text-center">
+                            <div class="h2">
+                                Место проведения
+                            </div>
+                            <div class="text24 text18-tablet">
+                                Манеж «Арена Альфа спорт», Москва, Шипиловский проезд, 63к2
+                            </div>
+                        </div>
+                        <div class="map" data-cord1="55.601711" data-cord2="37.706317"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="info">
+                <div class="container">
+                    <div class="m-card">
+                        <div class="info-block">
+                            <div class="h2 text-center">
+                                Что вас ждёт
+                            </div>
+                            <div class="text24 text18-tablet">
+                                Разнообразие форматов игр, приглашенный ведущий, более 6 команд. Ведущий и развлекательная программа для детей. 
+                            </div>
+                        </div>
+                        <div class="text">
+                            <ul>
+                                <li>Профессиональные судьи </li>
+                                <li>Фото и видео съёмка </li>
+                                <li>Награждение участников уникальными медалями</li>
+                                <li>Время тайма 25 мин.</li>
+                                <li>
+                                    Уникальные размеры полей для каждой возрастной группы
+
+                                    <div>
+                                        <p>15 × 30 для 2018 и 2017</p>
+                                        <p>20 × 40 для 2016 и 2015</p>
+                                        <p>30 × 50 для 2014</p>
+                                        <p>35 × 60 для 2013</p>
+                                    </div>
+                                </li>
+                                <li>Счета и турнирные таблицы на сайте в режиме онлайн</li>
+                                <li>Конкурсы с призами для победителей</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="partners">
+                <div class="container">
+                    <div class="m-card">
+                        <div class="h2 text-center">
+                            Партнеры
+                        </div>
+                        <div class="partners__items">
+                            <div class="partner-item">
+                                <div class="partner-item__img">
+                                    <img src="img/partner.svg" alt="">
+                                </div>
+                                <div class="partner-item__text">
+                                    Информационный  партнер
+                                </div>
+                            </div>
+
+                            <div class="partner-item">
+                                <div class="partner-item__img">
+                                    <img src="img/partner2.svg" alt="">
+                                </div>
+                                <div class="partner-item__text">
+                                    Генеральный  партнер
+                                </div>
+                            </div>
+
+                            <div class="partner-item">
+                                <div class="partner-item__img">
+                                    <img src="img/partner3.svg" alt="">
+                                </div>
+                                <div class="partner-item__text">
+                                    Партнер
+                                </div>
+                            </div>
+
+                            <div class="partner-item">
+                                <div class="partner-item__img">
+                                    <img src="img/partner2.svg" alt="">
+                                </div>
+                                <div class="partner-item__text">
+                                    Партнер
+                                </div>
+                            </div>
+
+                            <div class="partner-item">
+                                <div class="partner-item__img">
+                                    <img src="img/partner2.svg" alt="">
+                                </div>
+                                <div class="partner-item__text">
+                                    Партнер
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__inner">
+                    <div class="footer__c">© 2024. Федеральная футбольная лига</div>
+                    <a href="" class="footer__link">Политика конфиденциальности</a>
+                    <div class="footer__by">Сделано в Design Lab</div>
+                </div>
+            </div>
+
+        </footer>
+    </div>
+
+    <script src="js/imask.js"></script>
+    <script src="js/main.min.js"></script>
+
+    <script>
+        let maps = document.querySelectorAll("[data-cord1]")
+
+        ymaps.ready(init);
+
+
+
+
+        function init(map) {
+            maps.forEach(map => {
+                createMap(map)
+            })
+
+            function createMap(map) {
+                let cord = [+map.dataset.cord1, +map.dataset.cord2]
+
+                let myMap = new ymaps.Map(map, {
+                    center: cord,
+                    zoom: 16,
+                    controls: []
+                });
+                myMap.behaviors.disable('scrollZoom');
+                myMap.controls.add('zoomControl');
+
+                let placeMark = new ymaps.Placemark(cord, {}, {
+                    iconLayout: 'default#image',
+                    iconImageHref: "img/mark.svg",
+                    iconImageSize: [24, 24],
+                    iconImageOffset: [-12, -12]
+                });
+                myMap.geoObjects.add(placeMark);
+            }
+        }
+    </script>
+</body>
+
+</html>
