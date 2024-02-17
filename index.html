@@ -78,7 +78,7 @@
                             </div>
                         </div>
                         <div class="main__img">
-                            <img src="img/boys.png" alt="">
+                            <img src="img/boys.png" srcset="img/boys2x.png 2x" alt="" loading="lazy">
                         </div>
                     </div>
                 </div>
@@ -86,7 +86,7 @@
 
             <div id="req" class="req">
                 <div class="container">
-                    <div class="m-card">
+                    <div class="m-card req__inner">
                         <div class="info-block text-center">
                             <div class="h2">
                                 Заявка на участие
@@ -95,22 +95,31 @@
                                 Открыта регистрация для ваших команд на предстоящий турнир, который состоится. Количество мест ограничено! 
                             </div>
                         </div>
-                        <form action="https://echo.htmlacademy.ru" class="req-form">
+                        <form action="https://echo.htmlacademy.ru" class="req-form _success2">
                             <div class="req-form__fields">
                                 <div class="fg _full">
-                                    <input name="companyName" required type="text" placeholder="Название команды">
+                                    <input name="companyName" type="text" placeholder="Название команды">
+                                    <div class="fg__error-text">
+                                        Название команды введено неправильно
+                                    </div>
                                 </div>
                                 <div class="fg _full">
-                                    <input name="name" required type="text" placeholder="Фамилия, имя и отчество">
+                                    <input name="name" type="text" placeholder="Фамилия, имя и отчество">
+                                    <div class="fg__error-text">
+                                        Имя введено неправильно
+                                    </div>
                                 </div>
                                 <div class="fg">
-                                    <input name="phone" required type="tel" placeholder="Телефон">
+                                    <input name="phone" type="tel" placeholder="Телефон">
                                     <div class="fg__error-text">
                                         Телефон введён неправильно
                                     </div>
                                 </div>
                                 <div class="fg">
-                                    <input name="email" required type="email" placeholder="Почта">
+                                    <input name="email" type="email" placeholder="Почта">
+                                    <div class="fg__error-text">
+                                        Почта введена неправильно
+                                    </div>
                                 </div>
                             </div>
                             <div class="req-form__nav">
@@ -119,6 +128,17 @@
                                 </button>
                             </div>
                         </form>
+                        <div class="req-success">
+                            <img src="img/check-circle.svg" alt="" class="req-success__icon">
+                            <div class="info-block text-center">
+                                <div class="h2">
+                                    Заявка отправлена
+                                </div>
+                                <div class="text24 text18-tablet">
+                                    В ближайшее время мы с вами свяжемся.
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -239,7 +259,7 @@
                 <div class="footer__inner">
                     <div class="footer__c">© 2024. Федеральная футбольная лига</div>
                     <a href="" class="footer__link">Политика конфиденциальности</a>
-                    <div class="footer__by">Сделано в Design Lab</div>
+                    <div class="footer__by">Сделано в <a href="https://design-lab.ru/">Design Lab</a></div>
                 </div>
             </div>
 
@@ -249,40 +269,6 @@
     <script src="js/imask.js"></script>
     <script src="js/main.min.js"></script>
 
-    <script>
-        let maps = document.querySelectorAll("[data-cord1]")
-
-        ymaps.ready(init);
-
-
-
-
-        function init(map) {
-            maps.forEach(map => {
-                createMap(map)
-            })
-
-            function createMap(map) {
-                let cord = [+map.dataset.cord1, +map.dataset.cord2]
-
-                let myMap = new ymaps.Map(map, {
-                    center: cord,
-                    zoom: 16,
-                    controls: []
-                });
-                myMap.behaviors.disable('scrollZoom');
-                myMap.controls.add('zoomControl');
-
-                let placeMark = new ymaps.Placemark(cord, {}, {
-                    iconLayout: 'default#image',
-                    iconImageHref: "img/mark.svg",
-                    iconImageSize: [24, 24],
-                    iconImageOffset: [-12, -12]
-                });
-                myMap.geoObjects.add(placeMark);
-            }
-        }
-    </script>
 </body>
 
 </html>
